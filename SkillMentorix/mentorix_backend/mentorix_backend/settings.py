@@ -40,8 +40,8 @@ INSTALLED_APPS = [
 ]
 
 EXTERNAL_APPS = [
-    'mentorix_backend.accounts',
-    'mentorix_backend.league'
+    'accounts',
+    'league'
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS
