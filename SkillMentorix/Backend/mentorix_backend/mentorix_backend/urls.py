@@ -17,6 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from ..accounts.views import login_page, logout_page, signup_page
+from SkillMentorix.Backend.mentorix_backend.league import views
+
 urlpatterns = [
+    path('', login_page, name='login_page'),
+    path('logout/', logout_page, name='logout_page'),
+    path('signup/', signup_page, name='signup_page'),
     path('admin/', admin.site.urls),
 ]
